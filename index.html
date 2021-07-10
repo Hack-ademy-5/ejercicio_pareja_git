@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- hoja de estilos propia -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        .animation {
+            color: white;
+        }
+
+        .arrow {
+            animation: arrow-animation 2.5s 2 ease-in-out;
+        }
+
+        @keyframes arrow-animation {
+            0% {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="navbar">
+        <!-- elemento contenedor madre -->
+        <a href="#">Contacto</a><!--  hijo 1 -->
+        <a href="#">Quienes somos</a><!--  hijo 2 -->
+        <a href="#">Home</a> <!-- hijo 3 -->
+        <a href="#">Login</a> <!-- hijo 4 -->
+    </div>
+    <div class="container">
+        <div class="arrow">
+            <i class="fas fa-arrow-alt-circle-down fa-3x animation"></i>
+        </div>
+    </div>
+    <div class="subNav">
+    </div>
+    <div style="margin-top: 2000px;"></div>
+</body>
+
+</html>
